@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>User Profile</title>
+</head>
+<body class="bg-zinc-900 text-white flex items-center justify-center min-h-screen">
+
+  <div class="bg-zinc-800/70 backdrop-blur-lg shadow-lg p-6 rounded-2xl w-full max-w-sm">
+    <div class="flex flex-col items-center">
+      <!-- Profile Picture -->
+      <div class="w-24 h-24 rounded-full overflow-hidden border-4 border-zinc-600">
+        <img 
+          src="https://img.freepik.com/free-vector/blue-circle-with-white-user_78370-4707.jpg" 
+          alt="Profile Picture"
+          class="w-full rounded-full h-full object-cover"
+        />
+      </div>
+
+      <!-- User Info -->
+      <h2 class="text-xl font-semibold mt-4"><%= user.email%></h2>
+    
+      <!-- Bio -->
+      <p class="text-sm text-zinc-400 text-center mt-3">
+        👋  Developer <br>
+        💻 Building amazing web experiences <br>
+        🚀 Passionate about clean code
+      </p>
+
+      <!-- Buttons -->
+      <div class="mt-6 flex gap-3">
+
+        <a 
+          href="/logout"
+          class="bg-red-600 hover:bg-red-700 text-white text-sm px-4 py-2 rounded-lg transition">
+          Logout
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
